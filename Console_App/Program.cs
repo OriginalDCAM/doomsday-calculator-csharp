@@ -78,7 +78,7 @@ for (var i = 0; i < 4; i++)
     if (calc4 <= 6 && calc4 >= 0)
         i = 4;
     else
-        calc4 =- 7;
+        calc4 = calc4 - 7;
 
 var doomsdayDay = doomsdays[Convert.ToInt32(date.Month) - 1];
 var remainingDays = Convert.ToInt32(doomsdayDay - date.Day);
@@ -89,9 +89,9 @@ var calc5 = remainingDays % 7;
 var result = Convert.ToDouble(calc4 - calc5);
 
 // Checks if result is negative
-if (double.IsNegative(result)) result += 7;
+if (result < 0) { result = result + 7;}
 
 // Checks if result is above 6
-if (result > 6) result -= 7;
+if (result > 6) { result = result - 7;}
 Console.WriteLine(weekdays[Convert.ToInt32(result)]);
 Console.ReadKey();
