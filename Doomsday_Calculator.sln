@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console_App", "Console_App\Console_App.csproj", "{8FDE5BDC-7831-489D-8415-3DF26C616115}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoomsdayCalculatorCore", "DoomsdayCalculatorCore\DoomsdayCalculatorCore.csproj", "{8FDE5BDC-7831-489D-8415-3DF26C616115}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{1EDC1A0B-E245-4AA4-9A1E-79B0483C290D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoomsdayCalculatorTesting", "DoomsdayCalculatorTesting\DoomsdayCalculatorTesting.csproj", "{1EDC1A0B-E245-4AA4-9A1E-79B0483C290D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

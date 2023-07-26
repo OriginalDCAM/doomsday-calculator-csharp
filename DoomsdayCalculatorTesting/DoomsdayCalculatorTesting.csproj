@@ -7,6 +7,8 @@
 
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
+        <AssemblyName>DoomsdayCalculatorTest</AssemblyName>
+        <RootNamespace>DoomsdayCalculatorTest</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -17,7 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Console_App\Console_App.csproj" />
+      <ProjectReference Include="..\DoomsdayCalculatorCore\DoomsdayCalculatorCore.csproj" />
     </ItemGroup>
 
 </Project>
