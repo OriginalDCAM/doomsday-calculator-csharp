@@ -1,16 +1,47 @@
-
-namespace TestProject1;
+namespace DoomsdayCalculatorTest;
 
 [TestClass]
 public class CenturyAnchorDateTest
 {
     [TestMethod]
-    public void TestMethod1()
+    public void GetCenturyAnchorDate_Returns2_ForYear2005()
     {
-        Assert.AreEqual(2,DoomsdayService.GetCenturyAnchorDate(2005));
-        Assert.AreEqual(5,DoomsdayService.GetCenturyAnchorDate(1818));
-        Assert.AreEqual(3,DoomsdayService.GetCenturyAnchorDate(1955));
-        Assert.AreEqual(0,DoomsdayService.GetCenturyAnchorDate(2105));
-        Assert.AreEqual(3, DoomsdayService.GetCenturyAnchorDate(300));
+        int year = 2005;
+
+        int result = DoomsdayService.GetCenturyAnchorDate(year);
+        
+        Assert.AreEqual(2, result);
+    }
+
+    [TestMethod]
+    public void GetCenturyAnchorDate_Returns5_ForYear1818()
+    {
+        
+        int year = 1818;
+
+        int result = DoomsdayService.GetCenturyAnchorDate(year);
+        
+        Assert.AreEqual(5, result);
+    }
+
+    [TestMethod]
+    public void GetCenturyAnchorDate_Returns0_ForYear2105()
+    {
+        
+        int year = 2105;
+
+        int result = DoomsdayService.GetCenturyAnchorDate(year);
+        
+        Assert.AreEqual(0, result);
+    }
+
+    [TestMethod]
+    public void GetCenturyAnchorDate_Returns3_ForYear300()
+    {
+        int year = 300;
+
+        int result = DoomsdayService.GetCenturyAnchorDate(year);
+        
+        Assert.AreEqual(3, result);
     }
 }
