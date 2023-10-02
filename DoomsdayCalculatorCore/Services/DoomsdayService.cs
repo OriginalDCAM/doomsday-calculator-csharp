@@ -1,4 +1,4 @@
-﻿namespace Console_App.Services;
+﻿namespace DoomsdayCalculatorCore.Services;
 
 public class DoomsdayService
 {
@@ -15,7 +15,12 @@ public class DoomsdayService
         {
             year += 400;
         }
-        
+
+        while (year > anchorYears[3, 1])
+        {
+            year -= 400;
+        }
+
         var centuryAnchorDate = 0;
         // Implement a solution for if the anchor year is not in the array
         for (var i = 0; i < anchorYears.GetLength(0); i++)
@@ -23,7 +28,6 @@ public class DoomsdayService
             if (year >= anchorYears[i, 0] && year <= anchorYears[i, 1])
             {
                 centuryAnchorDate = anchorYears[i, 2];
-                Console.WriteLine(centuryAnchorDate);
             }
         }
 

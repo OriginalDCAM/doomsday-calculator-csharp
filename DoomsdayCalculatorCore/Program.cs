@@ -1,4 +1,4 @@
-﻿using Console_App.Services;
+﻿using DoomsdayCalculatorCore.Services;
 
 var weekdays =
     new[]
